@@ -1,0 +1,27 @@
+web_student_etudiant_homepage:
+    pattern:  /hello/{name}
+    defaults: { _controller: webStudentEtudiantBundle:Default:index }
+Etudiant_accueil:
+    path: /etudiant
+    defaults: { _controller: webStudentEtudiantBundle:Etudiant:accueil }
+Etudiant_ajouter_secton:
+    path: /etudiant/ajouterSection
+    defaults: { _controller: webStudentEtudiantBundle:Etudiant:ajouterSection }
+Etudiant_ajouter_etudiant:
+    path: /etudiant/ajouterEtudiant
+    defaults: { _controller: webStudentEtudiantBundle:Etudiant:ajouterEtudiant }
+Etudiant_afficher_section:
+    path: /etudiant/consulterSection/{id}
+    defaults: { _controller: webStudentEtudiantBundle:Etudiant:consulterSection }
+Etudiant_afficher:
+    path: /etudiant/consulterEtudiant/{id}
+    defaults: { _controller: webStudentEtudiantBundle:Etudiant:consulterEtudiant }
+Etudiant_rechercher:
+    path: /etudiant/rechercherEtudiant/{nom}
+    defaults: { _controller: webStudentEtudiantBundle:Etudiant:rechercherEtudiant }
+Etudiant_cousulter_tous:
+    path: /etudiant/consulterLesEtudiants
+    defaults: { _controller: webStudentEtudiantBundle:Etudiant:consulterLesEtudiants }
+Etudiant_modifier:
+    path: /etudiant/modifier
+    defaults: { _controller: webStudentEtudiantBundle:Etudiant:modifier }

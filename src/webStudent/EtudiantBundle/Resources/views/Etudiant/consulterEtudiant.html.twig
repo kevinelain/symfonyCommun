@@ -1,0 +1,26 @@
+Voici les informations le concernant
+
+<table border = 1>
+	<tr>
+		<th>Nom</th>
+		<th>Prenom</th>
+		<th>Numero rue</th>
+		<th>Nom rue</th>
+		<th>Code Postal</th>
+		<th>Ville</th>
+		<th>Telephone</th>
+		<th>Mail</th>
+		<th>Section</th>
+	</tr>
+	<tr>
+	    <td>{{ etudiant.nom }}</td>
+		<td>{{ etudiant.prenom }}</td>
+		<td>{{ etudiant.numeroRue }}</td>
+		<td>{{ etudiant.nomRue }}</td>
+		<td>{{ etudiant.codePostal }}</td>
+		<td>{{ etudiant.ville }}</td>
+		<td>{{ etudiant.telephone }}</td>
+		<td>{{ etudiant.email }}</td>
+		<td>{{ etudiant.section.libelle }}</td>
+	</tr>
+</table>

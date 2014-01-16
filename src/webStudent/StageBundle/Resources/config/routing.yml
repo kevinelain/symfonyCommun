@@ -1,0 +1,15 @@
+web_student_stage_homepage:
+    pattern:  /entreprise/accueilEntreprise
+    defaults: { _controller: webStudentStageBundle:Stage:indexEntreprise }
+Entreprise_ajouter:
+    pattern:  /entreprise/ajouterEntreprise
+    defaults: { _controller: webStudentStageBundle:Stage:ajouterEntreprise }
+Entreprises_consulter_tous:
+    pattern:  /entreprise/consulterEntreprises
+    defaults: { _controller: webStudentStageBundle:Stage:consulterLesEntreprises }
+Entreprise_afficher:
+    path: /entreprise/consulterEntreprise/{id}
+    defaults: { _controller: webStudentStageBundle:Stage:consulterEntreprise}
+Entreprise_rechercher:
+    path: /entreprise/rechercherEntreprise/{nom}
+    defaults: { _controller: webStudentStageBundle:Stage:rechercherEntreprise }
